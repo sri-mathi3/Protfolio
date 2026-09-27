@@ -4,586 +4,1113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+
+    <title>Srimathi | Full Stack Developer</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="portfolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top">
+
+    <!-- Background -->
+    <div class="grid-bg"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold fs-3" href="#">
-                <i class="bi bi-code-slash text-primary"></i>
-                Srimathi
+
+            <a class="navbar-brand" href="#home">
+                <span class="logo-icon">
+                    <i class="bi bi-stars"></i>
+                </span>
+                Sri<span>Mathi</span>
             </a>
 
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
                 data-bs-target="#navbarMenu">
 
                 <span class="navbar-toggler-icon"></span>
-
             </button>
 
-            <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbarMenu">
 
-                <ul class="navbar-nav ms-auto align-items-lg-center">
+                <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link  px-3 " href="#home">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  px-3" href="#about">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  px-3" href="#skills">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  px-3" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  px-3" href="#certificate">Certificates</a>
+                        <a class="nav-link" href="#certificates">Certificates</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  px-3" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
 
-                    <!-- Dark Mode Icon -->
-                    <li class="nav-item ms-lg-3">
-                        <a href="#" class="nav-link ">
-                            <i class="bi bi-moon-stars-fill fs-5"></i>
-                        </a>
+                    <li class="nav-item">
+                        <button id="themeBtn" class="theme-btn">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
                     </li>
 
                 </ul>
 
             </div>
-
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
         <div class="container">
+
             <div class="row align-items-center">
-
-                <!-- Left Content -->
-                <div class="col-lg-6 col-md-6 col-12 ">
-                    <p class="text-uppercase fw-semibold text-info mb-2">
-                        Welcome to My Portfolio
-                    </p>
-
-                    <h4 class="text-white">Hi, I'm</h4>
-
-                    <h1 class="display-2 fw-bold text-white ">
-                        Srimathi
-                    </h1>
-
-                    <h3 class="text-info fw-semibold mb-3 ">
-                        Aspiring Full Stack Developer
-                    </h3>
-
-                    <p class="text-secondary fs-5 fs-md-6">
-                        Passionate about building responsive websites and creating
-                        modern web applications using HTML, CSS, Bootstrap and
-                        JavaScript.
-                    </p>
-
-                    <div class="mt-4 d-flex flex-wrap gap-3">
-                        <button class="btn btn-info px-4 py-2 rounded-pill fw-semibold">
-                            <i class="bi bi-download"></i> Resume
-                        </button>
-
-                        <button class="btn btn-outline-light px-4 py-2 rounded-pill">
-                            Contact Me <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </div>
-
-                    <div class="mt-4 d-flex gap-4">
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-github"></i>
-                        </a>
-
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-envelope-fill"></i>
-                        </a>
-
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-telephone-fill"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right Image -->
-                <div class="col-lg-6 col-md-6 col-12 text-center mt-5 mt-lg-0 d-none ">
-                    <div class="profile-circle mx-auto">
-                        <img src="images/profile.png" class="img-fluid profile-img" alt="Profile">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="" id="about">
-        <div class="container">
-
-            <div class="text-center mb-5">
-                <h2 class="fw-bold section-title fs-1   mx-auto">About Me</h2>
-                <p class="text-secondary">
-                    Get to know more about me
-                </p>
-            </div>
-
-            <div class="row align-items-center gy-5">
 
                 <div class="col-lg-7">
 
-                    <h3 class="text-white mb-3">
-                        Aspiring Full Stack Developer
-                    </h3>
+                    <div class="status">
+                        <span></span>
+                        AVAILABLE FOR OPPORTUNITIES
+                    </div>
 
-                    <p class="text-secondary lh-lg">
-                        I am Srimathi, a B.Sc. Computer Science graduate with a
-                        passion for creating modern, responsive websites.
-                        I enjoy learning new technologies and building projects
-                        using HTML, CSS, Bootstrap and JavaScript.
+                    <p class="hello">HELLO, I'M</p>
+
+                    <h1>
+                        Sri <span>Mathi</span>
+                    </h1>
+
+                    <div class="typing-area">
+                        <span id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <p class="hero-text">
+                        B.Sc Computer Science graduate passionate about
+                        creating responsive websites, learning modern
+                        technologies and building meaningful digital
+                        experiences.
                     </p>
 
-                    <div class="row mt-3">
+                    <div class="hero-buttons">
 
+                        <a href="#projects" class="btn btn-main">
+                            Explore My Work
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
 
-                        <div class="col-lg-6  mb-3">
-                            <h6 class="text-info fw-bold">Name</h6>
-                            <p class="text-white">Srimathi. S</p>
-                        </div>
-
-                        <div class=" col-lg-6  mb-3">
-                            <h6 class="text-info fw-bold">Email</h6>
-                            <p class="text-white">srimathi2005sureshmani@gmail.com</p>
-                        </div>
-
-                        <div class=" col-lg-6  mb-3">
-                            <h6 class="text-info fw-bold">Education</h6>
-                            <p class="text-white">
-                                B.Sc Computer Science
-                            </p>
-                        </div>
-
-                        <div class=" col-lg-6  mb-3">
-                            <h6 class="text-info fw-bold">Location</h6>
-                            <p class="text-white">
-                                Tamil Nadu, India
-                            </p>
-                        </div>
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
 
                     </div>
 
-                    <button class="btn btn-primary px-4 py-2 rounded-pill mt-3">
-                    Download Resume
-                </button>  
+                    <div class="tech-list">
+
+                        <span>
+                            <i class="bi bi-filetype-html"></i>
+                            HTML
+                        </span>
+
+                        <span>
+                            <i class="bi bi-filetype-css"></i>
+                            CSS
+                        </span>
+
+                        <span>
+                            <i class="bi bi-bootstrap"></i>
+                            Bootstrap
+                        </span>
+
+                        <span>
+                            <i class="bi bi-filetype-js"></i>
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO AI CARD -->
+                <div class="col-lg-5">
+
+                    <div class="ai-container">
+
+                        <div class="orbit orbit-1"></div>
+                        <div class="orbit orbit-2"></div>
+
+                        <div class="ai-card">
+
+                            <div class="ai-top">
+
+                                <span>
+                                    <i class="bi bi-cpu"></i>
+                                    AI.DEV
+                                </span>
+
+                                <span class="live">
+                                    ● LIVE
+                                </span>
+
+                            </div>
+
+                            <div class="avatar">
+
+                                <div class="avatar-circle">
+                                     <img src="./images/myimage.jpeg" alt="Srimathi S">
+                                </div>
+
+                            </div>
+
+                            <h3>Srimathi S</h3>
+
+                            <p>
+                                Computer Science Graduate
+                            </p>
+
+                            <div class="stats">
+
+                                <div>
+                                    <strong>06+</strong>
+                                    <small>Projects</small>
+                                </div>
+
+                                <div>
+                                    <strong>04</strong>
+                                    <small>Certificates</small>
+                                </div>
+
+                                <div>
+                                    <strong>∞</strong>
+                                    <small>Learning</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="floating floating-one">
+                            <i class="bi bi-code-slash"></i>
+                            BUILD
+                        </div>
+
+                        <div class="floating floating-two">
+                            <i class="bi bi-stars"></i>
+                            CREATE
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
 
         </div>
+
     </section>
 
-    <!-- Skill section -->
-    <section id="skills">
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
         <div class="container">
-            <div>
-                <h2 class="text-white text-center mb-4  section-title">My Skills</h2>
-            </div>
-            <div class="row g-3 ">
-                <div class="col-lg-3 col-md-6  col-sm-6">
-                    <div class="skill-card w-100 text-center p-3 ">
-                        <div class="imageclass ">
-                            <img src="./images/html.jpg" alt="">
-                        </div>
-                        <h4 class="text-white fs-6">HTML5</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6  col-sm-6">
-                    <div class="skill-card w-100 text-center p-3">
-                        <div class="imageclass">
-                            <img src="./images/css.jpg" alt="">
-                        </div>
-                        <h4 class="text-white fs-6">CSS3</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6  col-sm-6 ">
-                    <div class="skill-card w-100 text-center p-3">
-                        <div class="imageclass">
-                            <img src="./images/bootstrap-logo.svg" alt="">
-                        </div>
-                        <h4 class="text-white fs-6">Bootstrap</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6   col-sm-6">
-                    <div class="skill-card w-100 text-center p-3">
-                        <div class="imageclass">
-                            <img src="./images/JavaScript.jpg" alt="">
-                        </div>
-                        <h4 class="text-white fs-6">JavaScript</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- 
 
-<!-- Projects Section  -->
-<section class="projects" id="projects">
-    <div class="container-fluid">
+            <div class="section-title">
 
-        <!-- Heading -->
-            <div class="text-center ">
-                <h2 class="section-title">My Projects</h2>
-                <p class="text-secondary">
-                    Here are some of the projects I have developed.
+                <span>01 / ABOUT</span>
+
+                <h2>
+                    More than just
+                    <em>code.</em>
+                </h2>
+
+                <p>
+                    Get to know the person behind the projects.
                 </p>
-            </div>
-
-           
-
-<!-- Project 1 -->
-<div id="projectCarousel" class="carousel slide container ">
-
-    <div class="carousel-inner ">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-            <div class="row g-4 ">
-
-                <!-- Project 1 -->
-                <div class="col-md-12  col-lg-6 ">
-                    <div class="card w-100   ">
-                        <div class="card-image w-100 ">
-                        <img src="./images/project3.jpg.png" class="card-img-top">
-                        </div>
-                        <div class="card-body">
-                            <h4>Yummy</h4>
-                            <p>A responsive food ordering website.</p>
-
-                        <span class="badge bg-primary">HTML</span>
-                        <span class="badge bg-success">CSS</span>
-                        <span class="badge bg-warning text-dark">Bootstrap</span>
-
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-outline-dark">GitHub</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="col-md-12   col-lg-6  ">
-                    <div class="card  w-100  ">
-                        <div class="card-image w-100">
-                        <img src="./images/project4.jpg.png" class="card-img-top">
-                        </div>
-                        <div class="card-body">
-                            <h4>Spizy</h4>
-                            <p>A modern restaurant website.</p>
-
-                             <span class="badge bg-primary">HTML</span>
-                        <span class="badge bg-success">CSS</span>
-                        <span class="badge bg-warning text-dark">Bootstrap</span>
-
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-outline-dark">GitHub</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
-        </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
+
             <div class="row g-4">
 
-                <!-- Project 3 -->
-                <div class="col-md-12   col-lg-6">
-                    <div class="card  w-100 ">
-                        <div class="card-image w-100">
-                        <img src="./images/project5.jpg.png" class="card-img-top">
+                <div class="col-lg-7">
+
+                    <div class="glass-card">
+
+                        <div class="terminal-header">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                            <small>about-me.js</small>
+
                         </div>
-                        <div class="card-body">
-                            <h4>Monoline</h4>
-                            <p>Modern portfolio website.</p>
 
-                             <span class="badge bg-primary">HTML</span>
-                        <span class="badge bg-success">CSS</span>
-                        <span class="badge bg-warning text-dark">Bootstrap</span>
+                        <div class="code">
 
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-outline-dark">GitHub</a>
+                            <p>
+                                <b>const</b> developer = {
+                            </p>
+
+                            <p class="indent">
+                                <span>name:</span> "Srimathi",
+                            </p>
+
+                            <p class="indent">
+                                <span>education:</span>
+                                "B.Sc Computer Science",
+                            </p>
+
+                            <p class="indent">
+                                <span>focus:</span>
+                                "Web Development",
+                            </p>
+
+                            <p class="indent">
+                                <span>mindset:</span>
+                                "Keep Learning",
+                            </p>
+
+                            <p class="indent">
+                                <span>goal:</span>
+                                "Grow in IT"
+                            </p>
+
+                            <p>
+                                };
+                            </p>
+
                         </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 4 -->
-                <div class="col-md-12    col-lg-6">
-                    <div class="card w-100">
-                        <div class="card-image w-100">
-                        <img src="./images/project2.jpg.png" class="card-img-top">
-                        </div>
-                        <div class="card-body  ">
-                            <h4>Glamore</h4>
-                            <p>Beauty products website.</p>
+                        <p class="about-text">
 
-                             <span class="badge bg-primary">HTML</span>
-                        <span class="badge bg-success">CSS</span>
-                        <span class="badge bg-warning text-dark">Bootstrap</span>
+                            I enjoy creating modern and responsive
+                            websites and learning technologies that
+                            help me become a better developer.
 
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-outline-dark">GitHub</a>
-                        </div> 
-                        </div>
-                    </div>
-                </div>
+                            I like understanding how things work,
+                            solving problems and improving my projects
+                            step by step.
 
-            </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item  p-3 ">
-            <div class="row g-4 ">
-
-                <!-- Project 5 -->
-                <div class="col-md-12  col-lg-6">
-                    <div class="card w-100">
-                         <div class="card-image w-100">
-                        <img src="./images/project1.jpg.png" class="card-img-top">
-                        </div>
-                        <div class="card-body pt-1">
-                            <h4>E-Learning</h4>
-                            <p>Online learning platform.</p>
-
-                        <span class="badge bg-primary">HTML</span>
-                        <span class="badge bg-success">CSS</span>
-                        <span class="badge bg-warning text-dark">Bootstrap</span>
-
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-outline-dark">GitHub</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="col-md-12  col-lg-6">
-                    <div class="card w-100 ">
-                        <div class="card-image w-100">
-                        <img src="./images/project6.jpg.png" class="card-img-top">
-                        </div>
-                        <div class="card-body pt-1">
-                            <h4>Learn Hub</h4>
-                            <p>Educational responsive website.</p>
-
-                        <span class="badge bg-primary">HTML</span>
-                        <span c lass="badge bg-success">CSS</span>
-                        <span class="badge bg-warning text-dark">Bootstrap</span>
-
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-outline-dark">GitHub</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-</div>
- <!-- Indicators -->
-   <div class="btn-toolbar justify-content-center m-0">
-    <div class="btn-group">
-
-        <button class="btn btn-primary"
-                data-bs-target="#projectCarousel"
-                data-bs-slide-to="0">
-            1
-        </button>
-
-        <button class="btn btn-primary"
-                data-bs-target="#projectCarousel"
-                data-bs-slide-to="1">
-            2
-        </button>
-
-        <button class="btn btn-primary"
-                data-bs-target="#projectCarousel"
-                data-bs-slide-to="2">
-            3
-        </button>
-
-    </div>
-</div>
-           
-</div>
-</section>
-
-<!-- certificate -->
-<section id="certificate" class="certificate">
-<div class="container-fluid row g-4  w-100 justify-content-center ">
-
-
-       <div class="text-center ">
-            <h2 class="section-title">Certificates</h2>
-            <p class="text-secondary">
-                Certifications I have earned through continuous learning.
-            </p>
-        </div>
-
-        <div class="col-6 col-xl-6 onecol " >
-        <div class="card w-100 certificate-body " >
-            <img src="./images/spring.jpg.png" class="card-img-top" alt="...">
-            <div class="card-body  ">
-                <h5 class="card-title">Spring Boot</h5>
-                 <p class="card-text ">  Successfully completed Spring 5 Basics .</p>                  
-                 <p class="text-info">April 9, 2025</p>
-                <a href="images/spring.jpg.png"target="_blank"class="btn btn-primary">View Certificate</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-6 col-xl-6  onecol">
-        <div class="card w-100" >
-            <img src="./images/apace.jpg.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                 <h5 class="card-title"> Apache Maven</h5>
-                    <p class="card-text"> Successfully completed the Apache Maven .</p>
-                        <p class="text-info">
-                            March 27, 2025
                         </p>
-                        <a href="images/apace.jpg.png"
-                           target="_blank"
-                           class="btn btn-primary">
-                           View Certificate
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <div class="glass-card info-card">
+
+                        <div class="info">
+                            <span>Name</span>
+                            <strong>Srimathi S</strong>
+                        </div>
+
+                        <div class="info">
+                            <span>Education</span>
+                            <strong>B.Sc Computer Science</strong>
+                        </div>
+
+                        <div class="info">
+                            <span>Focus</span>
+                            <strong>Web Development</strong>
+                        </div>
+
+                        <div class="info">
+                            <span>Location</span>
+                            <strong>Tamil Nadu, India</strong>
+                        </div>
+
+                        <div class="info">
+                            <span>Status</span>
+                            <strong class="green">
+                                Learning & Building
+                            </strong>
+                        </div>
+
+                        <a href="#contact" class="btn btn-main w-100">
+                            Let's Work Together
+                            <i class="bi bi-arrow-right"></i>
                         </a>
-            </div>
-        </div>
-        </div>
 
-        <div class="col-6 col-xl-6 onecol ">
-        <div class="card w-100 " >
-            <img src="images/hibiert.jpg.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                 <h5 class="card-title">Hibernate Framework</h5>
-                 <p class="card-text">Successfully completed Hibernate Framework - Basics.</p>                    
-                 <p class="text-info">March 23, 2025</p>
-                <a href="images/hibiert.jpg.png"target="_blank"class="btn btn-primary">View Certificate</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-6 col-xl-6  onecol">
-        <div class="card w-100 ">
-            <img src="./images/javase.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                 <h5 class="card-title">Java SE 8 Features</h5>
-                 <p class="card-text  ">Successfully completed Java SE 8 Features.</p>                    
-                 <p class="text-info">March 23, 2025</p>
-                 <a href="images/javase.png"target="_blank"class="btn btn-primary">View Certificate</a>
-            </div>
-        </div>
-        </div>
-
-</div>
-</section>
-
-    <!-- Contact Section -->
-    <section class="contact " id="contact">
-        <div class="container ">
-
-            <div class="text-center mb-5">
-                <h2 class="section-title">Contact Me</h2>
-                <p class="text-secondary">
-                    Feel free to reach out. I'd love to hear from you!
-                </p>
-            </div>
-
-            
-            <div class=" mx-lg-auto mx-auto ">
-
-                <!-- Contact Information -->
-                <h3 class="text-white mb-4 text-lg-center ">Let's Connect</h3>
-                <div class=" d-flex flex justify-content-center justify-content-around p-lg-3   gap-lg-4 gap-sm-3 ">
-
-                    <div class="contact-info  ">
-                        <div class=" d-flex justify-content-lg-center  d-flex justify-content-md-center  mb-3">
-                        <i class="bi bi-envelope-fill p-3  "></i>
-                        </div>
-                        
-                        <div class="hint">
-                            <h6 class="fs-lg-5 fs-4 text-white text-lg-center text-md-center">Email</h6>
-                            <p class=" text-lg-center fs-6 ">srimathi2005sureshmani@gmail.com</p>
-                        </div>
                     </div>
 
-                    <div class="contact-info">
-                        <div class="d-flex  justify-content-lg-center d-flex justify-content-md-center   mb-3">
-                        <i class="bi bi-telephone-fill "></i>
-                        </div>
-                        <div>
-                            <h6 class="fs-5 text-white text-lg-center text-md-center">Phone</h6>
-                            <p class="text-lg-center text-md-center">+91 7397180735 </p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info mb-4">
-                        <div class="d-flex justify-content-lg-center justify-content-md-center mb-3">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        </div>
-                        <div>
-                            <h6 class="fs-5 text-white text-lg-center text-md-center">Location</h6>
-                            <p class="text-lg-center text-md-center">Tamil Nadu, India</p>
-                        </div>
-                    </div> 
-
-                    
-
                 </div>
-                
-                <div class="social-links d-flex gap-3 mt-4 w-50 justify-content-around mx-lg-auto mx-sm-auto  ">
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-github"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
-                </div>
-               
+
             </div>
 
         </div>
+
     </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>02 / TECH STACK</span>
+
+                <h2>
+                    Tools I
+                    <em>build with.</em>
+                </h2>
+
+                <p>
+                    Technologies I'm learning and using.
+                </p>
+
+            </div>
+
+
+            <div class="row g-3">
+
+                <div class="col-6 col-lg-3">
+                    <div class="skill">
+                        <i class="bi bi-filetype-html"></i>
+                        <h5>HTML5</h5>
+                        <small>Structure</small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="skill">
+                        <i class="bi bi-filetype-css"></i>
+                        <h5>CSS3</h5>
+                        <small>Styling</small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="skill">
+                        <i class="bi bi-bootstrap"></i>
+                        <h5>Bootstrap</h5>
+                        <small>Responsive UI</small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="skill">
+                        <i class="bi bi-filetype-js"></i>
+                        <h5>JavaScript</h5>
+                        <small>Interactions</small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="skill">
+                        <i class="bi bi-cup-hot"></i>
+                        <h5>Java</h5>
+                        <small>Programming</small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="skill">
+                        <i class="bi bi-database"></i>
+                        <h5>SQL</h5>
+                        <small>Database</small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="skill">
+                        <i class="bi bi-git"></i>
+                        <h5>Git</h5>
+                        <small>Version Control</small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="skill">
+                        <i class="bi bi-github"></i>
+                        <h5>GitHub</h5>
+                        <small>Projects</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>03 / PROJECTS</span>
+
+                <h2>
+                    Things I've
+                    <em>built.</em>
+                </h2>
+
+                <p>
+                    A selection of my web development work.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- PROJECT 1 -->
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-img">
+                            <img src="./images/project3.jpg.png" alt="Yummy">
+                        </div>
+
+                        <div class="project-content">
+
+                            <small>01</small>
+
+                            <h3>Yummy</h3>
+
+                            <p>
+                                Responsive food ordering website
+                                with a clean user interface.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="project-buttons">
+
+                                <a href="#" class="btn btn-main">
+                                    Live Demo
+                                </a>
+
+                                <a href="#" class="btn btn-outline">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-img">
+                            <img src="./images/project4.jpg.png" alt="Spizy">
+                        </div>
+
+                        <div class="project-content">
+
+                            <small>02</small>
+
+                            <h3>Spizy</h3>
+
+                            <p>
+                                Modern restaurant website designed
+                                for a smooth browsing experience.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="project-buttons">
+
+                                <a href="#" class="btn btn-main">
+                                    Live Demo
+                                </a>
+
+                                <a href="#" class="btn btn-outline">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-img">
+                            <img src="./images/project5.jpg.png" alt="Monoline">
+                        </div>
+
+                        <div class="project-content">
+
+                            <small>03</small>
+
+                            <h3>Monoline</h3>
+
+                            <p>
+                                Modern portfolio website focused
+                                on a clean visual layout.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="project-buttons">
+
+                                <a href="#" class="btn btn-main">
+                                    Live Demo
+                                </a>
+
+                                <a href="#" class="btn btn-outline">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 4 -->
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-img">
+                            <img src="./images/project2.jpg.png" alt="Glamore">
+                        </div>
+
+                        <div class="project-content">
+
+                            <small>04</small>
+
+                            <h3>Glamore</h3>
+
+                            <p>
+                                Beauty products website with a
+                                modern shopping-style interface.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="project-buttons">
+
+                                <a href="#" class="btn btn-main">
+                                    Live Demo
+                                </a>
+
+                                <a href="#" class="btn btn-outline">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 5 -->
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-img">
+                            <img src="./images/project1.jpg.png" alt="E-Learning">
+                        </div>
+
+                        <div class="project-content">
+
+                            <small>05</small>
+
+                            <h3>E-Learning</h3>
+
+                            <p>
+                                Online learning platform concept
+                                with responsive design.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="project-buttons">
+
+                                <a href="#" class="btn btn-main">
+                                    Live Demo
+                                </a>
+
+                                <a href="#" class="btn btn-outline">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 6 -->
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-img">
+                            <img src="./images/project6.jpg.png" alt="Learn Hub">
+                        </div>
+
+                        <div class="project-content">
+
+                            <small>06</small>
+
+                            <h3>Learn Hub</h3>
+
+                            <p>
+                                Educational responsive website
+                                built with Bootstrap.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="project-buttons">
+
+                                <a href="#" class="btn btn-main">
+                                    Live Demo
+                                </a>
+
+                                <a href="#" class="btn btn-outline">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>04 / CERTIFICATES</span>
+
+                <h2>
+                    Learning in
+                    <em>progress.</em>
+                </h2>
+
+                <p>
+                    Certificates earned through continuous learning.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <div class="certificate">
+
+                        <img src="./images/spring.jpg.png" alt="Spring Boot">
+
+                        <div>
+
+                            <span>2025</span>
+
+                            <h4>Spring Boot</h4>
+
+                            <p>
+                                Successfully completed Spring 5 Basics.
+                            </p>
+
+                            <a href="./images/spring.jpg.png" target="_blank">
+                                View Certificate
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="certificate">
+
+                        <img src="./images/apace.jpg.png" alt="Apache Maven">
+
+                        <div>
+
+                            <span>2025</span>
+
+                            <h4>Apache Maven</h4>
+
+                            <p>
+                                Successfully completed Apache Maven.
+                            </p>
+
+                            <a href="./images/apace.jpg.png" target="_blank">
+                                View Certificate
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="certificate">
+
+                        <img src="./images/hibiert.jpg.png" alt="Hibernate">
+
+                        <div>
+
+                            <span>2025</span>
+
+                            <h4>Hibernate Framework</h4>
+
+                            <p>
+                                Successfully completed Hibernate Framework Basics.
+                            </p>
+
+                            <a href="./images/hibiert.jpg.png" target="_blank">
+                                View Certificate
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="certificate">
+
+                        <img src="./images/javase.png" alt="Java SE 8">
+
+                        <div>
+
+                            <span>2025</span>
+
+                            <h4>Java SE 8 Features</h4>
+
+                            <p>
+                                Successfully completed Java SE 8 Features.
+                            </p>
+
+                            <a href="./images/javase.png" target="_blank">
+                                View Certificate
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>05 / CONTACT</span>
+
+                <h2>
+                    Let's build something
+                    <em>great.</em>
+                </h2>
+
+                <p>
+                    Have an opportunity or just want to say hello?
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-lg-7">
+
+                    <div class="glass-card contact-card">
+
+                        <div class="contact-icon">
+                            <i class="bi bi-send-fill"></i>
+                        </div>
+
+                        <h3>Start a conversation</h3>
+
+                        <p>
+                            I'm always interested in learning,
+                            building projects and connecting with
+                            people in tech.
+                        </p>
+
+                        <a href="mailto:srimathi2005sureshmani@gmail.com"
+                            class="contact-link">
+
+                            <i class="bi bi-envelope"></i>
+
+                            srimathi2005sureshmani@gmail.com
+
+                        </a>
+
+                        <a href="tel:+917397180735"
+                            class="contact-link">
+
+                            <i class="bi bi-telephone"></i>
+
+                            +91 7397180735
+
+                        </a>
+
+                        <div class="social">
+
+                            <a href="#">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="bi bi-github"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <div class="ai-message">
+
+                        <div class="ai-label">
+                            <i class="bi bi-stars"></i>
+                            AI MESSAGE
+                        </div>
+
+                        <h4>
+                            Every project is
+                            a step forward.
+                        </h4>
+
+                        <p>
+                            Keep learning.
+                            Keep building.
+                            Keep improving.
+                        </p>
+
+                        <div class="scan"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI BUTTON -->
+    <button id="aiButton" class="ai-button">
+
+        <i class="bi bi-stars"></i>
+
+        Ask AI
+
+    </button>
+
+
+    <!-- AI CHAT -->
+    <div id="aiChat" class="ai-chat">
+
+        <div class="chat-header">
+
+            <span>
+                <i class="bi bi-stars"></i>
+                Sri Mathi AI
+            </span>
+
+            <button id="closeChat">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+
+        <div id="chatMessages" class="chat-messages">
+
+            <div class="bot-message">
+
+                Hi! 👋 I'm Sri Mathi's portfolio assistant.
+                Ask me about her skills, projects,
+                education or contact details.
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-buttons">
+
+            <button data-question="What are her skills?">
+                Skills
+            </button>
+
+            <button data-question="What projects has she built?">
+                Projects
+            </button>
+
+            <button data-question="What is her education?">
+                Education
+            </button>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask something..."
+            >
+
+            <button id="sendMessage">
+                <i class="bi bi-send-fill"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Sri Mathi.
+            Built with HTML, CSS, Bootstrap & JavaScript.
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>
